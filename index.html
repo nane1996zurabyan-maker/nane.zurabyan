@@ -53,11 +53,15 @@
   }
   nav .brand {
     font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 0.05em;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
     color: var(--c1);
+  }
+  nav .brand em {
     font-style: italic;
+    font-weight: 400;
+    color: var(--c2);
   }
   nav ul { display: flex; gap: 42px; list-style: none; }
   nav ul a {
@@ -124,23 +128,6 @@
 
   .hero-left { position: relative; z-index: 2; }
 
-  .portfolio-label {
-    font-family: 'Inter', sans-serif;
-    font-size: 11px;
-    letter-spacing: 0.5em;
-    text-transform: uppercase;
-    color: var(--c2);
-    margin-bottom: 18px;
-    display: flex;
-    align-items: center;
-    gap: 14px;
-  }
-  .portfolio-label::before {
-    content: '';
-    width: 40px; height: 1px;
-    background: var(--c2);
-  }
-
   .portfolio-title {
     font-family: 'Playfair Display', serif;
     font-size: clamp(80px, 14vw, 200px);
@@ -148,7 +135,7 @@
     line-height: 0.85;
     letter-spacing: -0.03em;
     color: var(--c1);
-    margin-bottom: 20px;
+    margin-bottom: 28px;
     position: relative;
   }
   .portfolio-title span {
@@ -769,8 +756,6 @@
       gap: 30px;
       text-align: center;
     }
-    .portfolio-label { justify-content: center; }
-    .portfolio-label::before { display: none; }
     .hero-subtitle { margin-left: auto; margin-right: auto; }
     .hero-bio { margin-left: auto; margin-right: auto; }
     .hero-tag { right: 10px; top: 10px; font-size: 14px; padding: 10px 16px; }
@@ -801,7 +786,7 @@
 <body>
 
 <nav id="nav">
-  <div class="brand">portfolio.</div>
+  <div class="brand">Nane <em>Z.</em></div>
   <ul id="navMenu">
     <li><a href="#home">Home</a></li>
     <li><a href="#works">My Works</a></li>
@@ -813,7 +798,6 @@
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-left">
-    <div class="portfolio-label">Portfolio</div>
     <h1 class="portfolio-title">
       <span>PORT</span>
       <span class="italic">FO</span>
